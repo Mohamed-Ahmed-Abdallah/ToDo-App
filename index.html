@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>ToDo App</title>
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- Template Main CSS File -->
+    <link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1 class="text-center text-info display-4">Welcome ToDO APP</h1>
+    <div class="container col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="form-group">
+                    <label>Your Task</label>
+                    <input id="inputTask" type="text" placeholder="Your Text" class="form-control">
+                </div>
+                <div id="invalidMessage" class="alert alert-danger none"></div>
+                <button id="taskBtn" class="btn btn-info btn-block">Add Task</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container col-md-6 mt-3">
+        <div class="card">
+            <div id="noTask" class="card-body">
+                <div class="alert alert-danger">
+                    <h4 class="text-center">No Tasks Yet.</h4>
+                </div>
+            </div>
+            <div id="allTasks" class="card-body none"></div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
